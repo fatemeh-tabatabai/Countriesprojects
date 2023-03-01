@@ -2,12 +2,11 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { apiURL } from "../util/api";
 import { Link } from "react-router-dom";
-import AllCountries from "./../AllCountries/AllCountries";
 
 const CountryInfo = () => {
   const [country, setCountry] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState("");
+  const [, setIsLoading] = useState(true);
+  const [, setError] = useState("");
 
   const { countryName } = useParams();
 
