@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { apiURL } from "../util/api";
 import { Link } from "react-router-dom";
+import AllCountries from "./../AllCountries/AllCountries";
 
 const CountryInfo = () => {
   const [country, setCountry] = useState([]);
@@ -38,9 +39,6 @@ const CountryInfo = () => {
         <Link to="/">Back</Link>
       </button>
 
-      {isLoading && !error && <h4>Loading........</h4>}
-      {error && !isLoading && { error }}
-
       {country?.map((country, index) => (
         <div className="country__info__container" key={index}>
           <div className="country__info-img">
@@ -50,22 +48,40 @@ const CountryInfo = () => {
           <div className="country__info">
             <h3>{country.name.common}</h3>
 
-            <div className="country__info-left">
-              <h5>
-                Population:{" "}
-                <span>
-                  {new Intl.NumberFormat().format(country.population)}
-                </span>
-              </h5>
-              <h5>
-                Region: <span>{country.region}</span>
-              </h5>
-              <h5>
-                Sub Region: <span>{country.subregion}</span>
-              </h5>
-              <h5>
-                Capital: <span>{country.capital}</span>
-              </h5>
+            <div className="country__infos">
+              <div className="country__info-left">
+                <h5>
+                  nativeName: <span>{country.name.official}</span>
+                </h5>
+                <h5>
+                  Population: <span>{country.population}</span>
+                </h5>
+                <h5>
+                  Region: <span>{country.region}</span>
+                </h5>
+                <h5>
+                  Sub Region: <span>{country.subregion}</span>
+                </h5>
+                <h5>
+                  Capital: <span>{country.capital}</span>
+                </h5>
+              </div>
+              <div className="country__info-right">
+                <h5>
+                  Top Level Domain: <span>{country.tld}</span>
+                </h5>
+                <h5>
+                  Currencies: <span>{country.cca2}</span>
+                </h5>
+                <h5>
+                  Languages: <span>{country.languages}</span>
+                </h5>
+              </div>
+            </div>
+            <div className="container-border">
+              <span>
+                Borders Countries: <span className="border">{borders}</span>
+              </span>
             </div>
           </div>
         </div>
