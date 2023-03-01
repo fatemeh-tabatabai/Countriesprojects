@@ -73,7 +73,7 @@ const CountryInfo = () => {
                   Currencies: <span>{country.cca2}</span>
                 </h5>
                 <h5>
-                  Languages: <span>{country.languages}</span>
+                  Languages: <span>{country.languages.key}</span>
                 </h5>
               </div>
             </div>
