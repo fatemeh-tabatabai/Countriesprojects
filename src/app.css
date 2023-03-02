@@ -45,8 +45,8 @@ body {
   width: 250px;
 
   border-radius: 5px;
-  color: hsl(209, 23%, 22%);
-  background: #fff;
+  background-color: hsl(209, 23%, 22%);
+  color: #fff;
 }
 
 .country__img img {
@@ -105,7 +105,7 @@ input {
 
 select {
   padding: 10px 25px;
-  color: hsl(209, 23%, 22%);
+  background-color: hsl(209, 23%, 22%);
   margin-bottom: 50px;
   border: none;
   outline: none;
