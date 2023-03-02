@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { apiURL } from "../util/api";
+import { apiURL } from "./api";
 import { Link } from "react-router-dom";
 
 const CountryInfo = () => {

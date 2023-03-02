@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { apiURL } from "../util/api";
+import { apiURL } from "./api";
 
-import SearchInput from "../Search/SearchInput";
-import FilterCountry from "../FilterCountry/FilterCountry";
+import SearchInput from "./SearchInput";
+import FilterCountry from "./FilterCountry";
 
 import { Link } from "react-router-dom";
 
