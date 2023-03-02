@@ -45,8 +45,8 @@ body {
   width: 250px;
 
   border-radius: 5px;
-  background: hsl(209, 23%, 22%);
-  color: #fff;
+  color: hsl(209, 23%, 22%);
+  background: #fff;
 }
 
 .country__img img {
@@ -83,9 +83,9 @@ body {
 
 input {
   padding: 10px 25px;
-  color: #fff;
+  background: #fff;
   border-radius: 5px;
-  background: hsl(209, 23%, 22%);
+  color: hsl(209, 23%, 22%);
   border: none;
   outline: none;
   margin-bottom: 50px;
@@ -93,7 +93,7 @@ input {
 }
 
 ::placeholder {
-  color: #fff;
+  background: #fff;
 }
 
 .country__top {
@@ -105,7 +105,7 @@ input {
 
 select {
   padding: 10px 25px;
-  background: hsl(209, 23%, 22%);
+  color: hsl(209, 23%, 22%);
   margin-bottom: 50px;
   border: none;
   outline: none;
@@ -126,7 +126,7 @@ select {
 
 button {
   padding: 10px 25px;
-  color: #fff;
+  background: #fff;
   background: hsl(209, 23%, 22%);
   border: none;
   outline: none;
